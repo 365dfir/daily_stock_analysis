@@ -18,6 +18,7 @@ from litellm import Router
 from src.config import get_config, get_api_keys_for_model, extra_litellm_params
 
 logger = logging.getLogger(__name__)
+litellm.drop_params = True
 
 
 # ============================================================
