@@ -27,7 +27,7 @@ from src.data.stock_mapping import STOCK_NAME_MAP
 from src.schemas.report_schema import AnalysisReportSchema
 
 logger = logging.getLogger(__name__)
-
+litellm.drop_params = True
 
 def check_content_integrity(result: "AnalysisResult") -> Tuple[bool, List[str]]:
     """
